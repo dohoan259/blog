@@ -22,7 +22,7 @@ app.use(morgan('combined'));
 
 // template engine
 app.engine(
-    'hbs',
+            'hbs',
     handlebars.engine({
         extname: '.hbs',
     }),
@@ -31,7 +31,7 @@ app.set('view engine', 'hbs'); // use for system
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // route
-route(app);
+route(      app);
 
 app.listen(port, () =>
     console.log(`Example listening on at http://localhost:${port}`),
